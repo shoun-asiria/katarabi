@@ -1,234 +1,672 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ケアサロン カラダビ | 身体美</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Noto Sans JP', sans-serif; background-color: #fbfbfa; color: #2d3732; }
-        .font-serif { font-family: 'Noto Serif JP', serif; }
-    </style>
-</head>
-<body class="antialiased">
+<!-- note戦略書 — 心に余裕、つくりませんか？ -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>note戦略書｜心に余裕、つくりませんか？</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <header class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-stone-100 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-full bg-[#005257] flex items-center justify-center text-white text-xs font-serif shadow-inner">身</div>
-                <div class="flex flex-col">
-                    <span class="font-serif text-xl font-bold tracking-widest text-[#005257] leading-none mb-1">カラダビ</span>
-                    <span class="text-[9px] text-[#c5a880] tracking-widest font-medium">SHINTAIBI</span>
-                </div>
-            </div>
-            <nav class="hidden lg:flex items-center gap-6 text-xs font-medium tracking-wider text-stone-600">
-                <a href="index.html" class="text-[#005257] border-b-2 border-[#005257] pb-1 font-bold">トップ</a>
-                <a href="layer00.html" class="hover:text-[#005257] transition-colors pb-1">LAYER 00 安全確認</a>
-                <a href="layer01.html" class="hover:text-[#005257] transition-colors pb-1">LAYER 01 邪魔を外す</a>
-                <a href="layer02.html" class="hover:text-[#005257] transition-colors pb-1">LAYER 02 気づき</a>
-                <a href="layer03.html" class="hover:text-[#005257] transition-colors pb-1">LAYER 03 条件設計</a>
-                <a href="layer04.html" class="hover:text-[#005257] transition-colors pb-1">LAYER 04 身体づくり</a>
-                <a href="layer05.html" class="hover:text-[#005257] transition-colors pb-1">LAYER 05 身体観</a>
-            </nav>
-            <div>
-                <a href="#" class="bg-[#005257] text-white px-6 py-3 rounded-full text-xs font-bold tracking-widest hover:bg-[#0c4a4a] hover:shadow-lg transition-all duration-300">お問い合わせ</a>
-            </div>
-        </div>
-    </header>
+<style>
+  :root{
+    --paper:#F1F2EC;
+    --paper-2:#E7EAE0;
+    --mist:#E2E6DB;
+    --ink:#2B322C;
+    --ink-soft:#55604F;
+    --moss:#5C7355;
+    --moss-deep:#46583F;
+    --sage:#9FAE96;
+    --line:#CBD3C1;
+    --amber:#BE9442;
+    --display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+    --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+  }
 
-    <main>
-        <section class="relative py-24 md:py-36 overflow-hidden bg-gradient-to-b from-[#f4f3ef] to-[#fbfbfa]">
-            <div class="absolute inset-0 opacity-40">
-                <div class="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-gradient-to-tr from-[#005257]/10 to-transparent blur-3xl"></div>
-                <div class="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-gradient-to-bl from-[#c5a880]/10 to-transparent blur-3xl"></div>
-            </div>
-            <div class="relative max-w-4xl mx-auto px-6 text-center">
-                <span class="inline-block border border-[#c5a880] text-[#c5a880] text-xs font-medium tracking-widest px-4 py-1.5 rounded-full mb-8 bg-white/60">12週間・3ヶ月プログラム</span>
-                <h1 class="font-serif text-3xl md:text-5xl font-semibold tracking-loose text-stone-800 leading-tight md:leading-snug mb-8">
-                    もうその場しのぎに<br class="md:hidden">通い続けなくて良い
-                </h1>
-                <p class="text-stone-600 text-sm md:text-base leading-relaxed max-w-xl mx-auto font-light tracking-wide">
-                    ケアサロン カラダビで、12週間・3ヶ月をかけて、<br class="hidden md:inline">
-                    自分の身体の苦手と整え方を見つける。
-                </p>
-                <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="#courses" class="w-full sm:w-auto bg-[#005257] text-white px-8 py-4 rounded-full text-xs font-bold tracking-widest hover:bg-[#0c4a4a] hover:shadow-xl transition-all duration-300">コースを見る</a>
-                    <a href="#approach" class="w-full sm:w-auto bg-white border border-stone-200 text-stone-600 px-8 py-4 rounded-full text-xs font-bold tracking-widest hover:border-stone-400 transition-all duration-300">5層アプローチとは</a>
-                </div>
-            </div>
-        </section>
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-weight:400;
+    line-height:1.95;
+    letter-spacing:.02em;
+    font-feature-settings:"palt" 1;
+    -webkit-font-smoothing:antialiased;
+  }
 
-        <section class="py-20 max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-stretch">
-                <div class="bg-white p-8 md:p-12 rounded-3xl border border-stone-100 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <h2 class="font-serif text-xl font-bold text-[#005257] tracking-wider mb-6 pb-4 border-b border-stone-100 flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-[#005257]"></span> ケアサロン カラダビとは
-                        </h2>
-                        <p class="text-stone-600 text-sm leading-relaxed font-light mb-6">
-                            ケアサロン カラダビは、手によるケアと動きの学びを組み合わせたサロンです。<br>
-                            今の身体の状態を一緒に確認し、原因になりやすいクセや負担のパターンを明らかにします。あなた自身が身体を整える力を育てていきます。
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3 pt-4 text-xs font-medium text-[#005257]">
-                        <div class="bg-[#005257]/5 p-3 rounded-xl text-center">状態を確認する</div>
-                        <div class="bg-[#005257]/5 p-3 rounded-xl text-center">手で整える</div>
-                        <div class="bg-[#005257]/5 p-3 rounded-xl text-center">動きを学ぶ</div>
-                        <div class="bg-[#005257]/5 p-3 rounded-xl text-center">整えを続ける</div>
-                    </div>
-                </div>
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px 140px;
+  }
 
-                <div class="bg-[#f5f4f0]/50 p-8 md:p-12 rounded-3xl border border-stone-200/60">
-                    <h2 class="font-serif text-xl font-bold text-stone-700 tracking-wider mb-6 pb-4 border-b border-stone-200/60">
-                        こんな場所ではありません
-                    </h2>
-                    <ul class="space-y-5 text-sm text-stone-600 font-light">
-                        <li class="flex items-start gap-3">
-                            <span class="text-stone-400 mt-0.5">✕</span>
-                            <div>
-                                <strong class="font-medium text-stone-800 block mb-0.5">医療機関ではありません</strong>
-                                <span class="text-xs text-stone-500">診断・投薬・治療は行いません。</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-stone-400 mt-0.5">✕</span>
-                            <div>
-                                <strong class="font-medium text-stone-800 block mb-0.5">その場の症状だけを一時的に楽にする場所ではありません</strong>
-                                <span class="text-xs text-stone-500">根本的な身体の使い方に向き合います。</span>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-stone-400 mt-0.5">✕</span>
-                            <div>
-                                <strong class="font-medium text-stone-800 block mb-0.5">短期的に変化を追うだけの場所ではありません</strong>
-                                <span class="text-xs text-stone-500">あなたが自身が身体を理解し、整え続けられるようになることを大切にしています。</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+  /* ---------- hero ---------- */
+  .hero{
+    min-height:88vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:96px 0 64px;
+    animation:rise 1.1s ease both;
+  }
+  .kicker{
+    font-size:12.5px;
+    letter-spacing:.42em;
+    color:var(--moss);
+    font-weight:500;
+    margin:0 0 40px;
+    display:flex;align-items:center;gap:14px;
+  }
+  .kicker::before{
+    content:"";
+    width:9px;height:9px;border-radius:50%;
+    border:1.5px solid var(--moss);
+    display:inline-block;flex:0 0 auto;
+  }
+  .hero h1{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:clamp(38px,8.4vw,68px);
+    line-height:1.35;
+    letter-spacing:.04em;
+    margin:0 0 34px;
+    color:var(--ink);
+  }
+  .hero h1 .q{ color:var(--moss); }
+  .hero .sub{
+    font-size:clamp(15px,2.6vw,18px);
+    color:var(--ink-soft);
+    max-width:34em;
+    margin:0 0 56px;
+    line-height:1.9;
+  }
+  .hero .meta{
+    border-top:1px solid var(--line);
+    padding-top:26px;
+    font-size:13px;
+    color:var(--ink-soft);
+    letter-spacing:.06em;
+    display:flex;flex-wrap:wrap;gap:6px 28px;
+  }
+  .hero .meta b{font-weight:500;color:var(--moss);}
 
-        <section id="courses" class="py-20 bg-stone-50 border-y border-stone-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="font-serif text-2xl md:text-3xl font-semibold tracking-widest text-stone-800">2つの入口コース</h2>
-                    <p class="text-xs text-[#c5a880] tracking-widest mt-2 uppercase font-medium">Courses</p>
-                    <p class="text-stone-500 text-xs mt-4">どちらのコースも、同じ5層アプローチをベースに進めます。入り口として重視する部位が異なるだけです。</p>
-                </div>
+  /* ---------- section scaffolding ---------- */
+  .section{padding:78px 0 0;}
+  .eyebrow{
+    display:flex;align-items:baseline;gap:18px;
+    margin:0 0 30px;
+  }
+  .num{
+    font-family:var(--display);
+    font-size:30px;
+    font-weight:500;
+    color:var(--sage);
+    line-height:1;
+    letter-spacing:.02em;
+  }
+  .etitle{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:clamp(23px,4.4vw,30px);
+    letter-spacing:.05em;
+    color:var(--ink);
+    line-height:1.4;
+    margin:0;
+  }
+  .lead{
+    font-size:16px;color:var(--ink-soft);
+    margin:0 0 30px;line-height:1.95;
+  }
 
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-stone-100 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-6">
-                                <h3 class="font-serif text-xl font-bold text-stone-800">膝・腰コース</h3>
-                                <span class="bg-[#005257]/10 text-[#005257] text-[10px] tracking-wider px-3 py-1 rounded-full font-medium">Knee & Lower Back</span>
-                            </div>
-                            <p class="text-stone-500 text-xs mb-6 pb-4 border-b border-stone-100">膝の重だるさ・腰の違和感・歩行中や階段が気になる方へ</p>
-                            <ul class="space-y-3 text-xs text-stone-600 font-light mb-8">
-                                <li class="flex items-center gap-2">✓ 骨盤・股関節・膝・足首の動きの滑らかさ</li>
-                                <li class="flex items-center gap-2">✓ 立ち・座り・歩くなどの日常運動動作を確認</li>
-                                <li class="flex items-center gap-2">✓ 日常動作の負担を軽減し、動きやすさへ</li>
-                            </ul>
-                        </div>
-                        <a href="layer00.html" class="block text-center border border-stone-200 text-stone-600 py-3 rounded-xl text-xs font-medium hover:bg-stone-50 transition-colors">このコースのステップを見る</a>
-                    </div>
+  p{margin:0 0 20px;}
+  strong{font-weight:700;color:var(--moss-deep);}
+  .hl{
+    background:linear-gradient(transparent 62%, rgba(190,148,66,.28) 62%);
+    font-weight:500;
+  }
 
-                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-stone-100 hover:shadow-md transition-shadow duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="flex justify-between items-start mb-6">
-                                <h3 class="font-serif text-xl font-bold text-stone-800">首・肩コース</h3>
-                                <span class="bg-[#c5a880]/10 text-[#c5a880] text-[10px] tracking-wider px-3 py-1 rounded-full font-medium">Neck & Shoulder</span>
-                            </div>
-                            <p class="text-stone-500 text-xs mb-6 pb-4 border-b border-stone-100">首や肩のこり・姿勢の崩れ・呼吸の浅さが気になる方へ</p>
-                            <ul class="space-y-3 text-xs text-stone-600 font-light mb-8">
-                                <li class="flex items-center gap-2">✓ 後頭部・胸郭・肩甲骨の動きの滑らかさ</li>
-                                <li class="flex items-center gap-2">✓ 脊柱・体幹のしなやかな連動を意識</li>
-                                <li class="flex items-center gap-2">✓ 腕の使い方・日常の負担を軽減</li>
-                            </ul>
-                        </div>
-                        <a href="layer00.html" class="block text-center border border-stone-200 text-stone-600 py-3 rounded-xl text-xs font-medium hover:bg-stone-50 transition-colors">このコースのステップを見る</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+  h3{
+    font-family:var(--body);
+    font-weight:700;
+    font-size:16.5px;
+    letter-spacing:.04em;
+    color:var(--ink);
+    margin:38px 0 14px;
+    padding-left:16px;
+    border-left:3px solid var(--moss);
+    line-height:1.6;
+  }
 
-        <section class="py-20 max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="font-serif text-2xl md:text-3xl font-semibold tracking-widest text-stone-800">12週間・3ヶ月の進め方</h2>
-                <p class="text-xs text-[#c5a880] tracking-widest mt-2 uppercase font-medium">Timeline</p>
-            </div>
+  ul{margin:0 0 22px;padding:0;list-style:none;}
+  ul li{
+    position:relative;padding-left:24px;margin-bottom:11px;
+    line-height:1.85;
+  }
+  ul li::before{
+    content:"";position:absolute;left:4px;top:.85em;
+    width:6px;height:6px;border-radius:50%;
+    background:var(--sage);
+  }
+  ul li b{font-weight:700;color:var(--moss-deep);}
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div class="bg-white border border-stone-200/60 rounded-2xl p-5 relative shadow-2xs">
-                    <div class="text-[10px] font-bold text-stone-400 tracking-wider mb-1">1〜2週</div>
-                    <div class="text-xs font-serif text-[#005257] font-bold mb-3">LAYER 00・01</div>
-                    <h4 class="text-sm font-semibold text-stone-800 mb-2">安全確認・邪魔を外す</h4>
-                    <p class="text-[11px] text-stone-500 font-light leading-relaxed">身体の状態を確認し、安全に進める土台を作った上で、末梢組織の抵抗を取り除きます。</p>
-                </div>
-                <div class="bg-white border border-stone-200/60 rounded-2xl p-5 relative shadow-2xs">
-                    <div class="text-[10px] font-bold text-stone-400 tracking-wider mb-1">3〜4週</div>
-                    <div class="text-xs font-serif text-[#005257] font-bold mb-3">LAYER 01・02</div>
-                    <h4 class="text-sm font-semibold text-stone-800 mb-2">感覚入力・身体への気づき</h4>
-                    <p class="text-[11px] text-stone-500 font-light leading-relaxed">感覚を入力を通して、脳の中の「身体地図」を正しく更新していきます。</p>
-                </div>
-                <div class="bg-white border border-stone-200/60 rounded-2xl p-5 relative shadow-2xs">
-                    <div class="text-[10px] font-bold text-stone-400 tracking-wider mb-1">5〜8週</div>
-                    <div class="text-xs font-serif text-[#005257] font-bold mb-3">LAYER 03</div>
-                    <h4 class="text-sm font-semibold text-stone-800 mb-2">整う条件を設計する</h4>
-                    <p class="text-[11px] text-stone-500 font-light leading-relaxed">姿勢・動作・環境を調整し、身体が自然に整う条件を専用マシンで見つけます。</p>
-                </div>
-                <div class="bg-white border border-stone-200/60 rounded-2xl p-5 relative shadow-2xs">
-                    <div class="text-[10px] font-bold text-stone-400 tracking-wider mb-1">9〜10週</div>
-                    <div class="text-xs font-serif text-[#005257] font-bold mb-3">LAYER 04</div>
-                    <h4 class="text-sm font-semibold text-stone-800 mb-2">頑張らない身体づくり</h4>
-                    <p class="text-[11px] text-stone-500 font-light leading-relaxed">無駄な力を抜き、日常動作の中で自然と力が発揮できる「体芯力」を育てます。</p>
-                </div>
-                <div class="bg-white border border-stone-200/60 rounded-2xl p-5 relative shadow-2xs">
-                    <div class="text-[10px] font-bold text-stone-400 tracking-wider mb-1">11〜12週</div>
-                    <div class="text-xs font-serif text-[#005257] font-bold mb-3">LAYER 05</div>
-                    <h4 class="text-sm font-semibold text-stone-800 mb-2">身体観を広げる</h4>
-                    <p class="text-[11px] text-stone-500 font-light leading-relaxed">文化・環境・進化など広い視点から、なぜその身体の使い方になったのかを見つめます。</p>
-                </div>
-            </div>
-            <p class="text-center text-xs text-stone-400 mt-8">※3ヶ月を通して、苦手な動きや負担のかかりやすい姿勢、役立つセルフケア、動きやすくなる条件が明確になります。</p>
-        </section>
+  .divider{
+    height:1px;background:var(--line);
+    margin:72px 0 0;border:0;
+  }
 
-        <section id="approach" class="py-20 bg-stone-900 text-stone-100">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="font-serif text-2xl md:text-3xl font-semibold tracking-widest text-white">5層アプローチ</h2>
-                    <p class="text-xs text-[#c5a880] tracking-widest mt-2 uppercase font-medium">5 Layer Approach</p>
-                </div>
+  /* ---------- callout ---------- */
+  .callout{
+    background:var(--mist);
+    border-radius:14px;
+    padding:28px 30px;
+    margin:30px 0;
+    position:relative;
+    border:1px solid var(--line);
+  }
+  .callout .tag{
+    font-size:11.5px;letter-spacing:.28em;color:var(--moss);
+    font-weight:600;display:block;margin-bottom:12px;
+  }
+  .callout p:last-child{margin-bottom:0;}
+  .callout.warm{
+    background:#F4EEDD;
+    border-color:#E4D5AE;
+  }
+  .callout.warm .tag{color:var(--amber);}
 
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <a href="layer00.html" class="block bg-stone-800/50 border border-stone-700/60 p-6 rounded-2xl hover:bg-stone-800 hover:border-[#c5a880]/50 transition-all duration-300 group">
-                        <span class="text-[10px] font-bold text-[#c5a880] uppercase tracking-wider block mb-1">LAYER 00</span>
-                        <h3 class="text-base font-serif font-bold text-white mb-2 group-hover:text-[#c5a880] transition-colors">安全確認</h3>
-                        <p class="text-xs text-stone-400 font-light leading-relaxed">身体の状態を確認し、医療機関への相談を最優先すべきサインを見逃さない、安心の入口。</p>
-                    </a>
-                    <a href="layer01.html" class="block bg-stone-800/50 border border-stone-700/60 p-6 rounded-2xl hover:bg-stone-800 hover:border-[#c5a880]/50 transition-all duration-300 group">
-                        <span class="text-[10px] font-bold text-[#c5a880] uppercase tracking-wider block mb-1">LAYER 01</span>
-                        <h3 class="text-base font-serif font-bold text-white mb-2 group-hover:text-[#c5a880] transition-colors">邪魔を外す</h3>
-                        <p class="text-xs text-stone-400 font-light leading-relaxed">筋・筋膜、関節、神経などの末梢組織の滑りを取り戻し、身体が動きやすくなる入口を作ります。</p>
-                    </a>
-                    <a href="layer02.html" class="block bg-stone-800/50 border border-stone-700/60 p-6 rounded-2xl hover:bg-stone-800 hover:border-[#c5a880]/50 transition-all duration-300 group">
-                        <span class="text-[10px] font-bold text-[#c5a880] uppercase tracking-wider block mb-1">LAYER 02</span>
-                        <h3 class="text-base font-serif font-bold text-white mb-2 group-hover:text-[#c5a880] transition-colors">身体への気づき</h3>
-                        <p class="text-xs text-stone-400 font-light leading-relaxed">全身からの感覚入力と具体的なワークを通じ、脳と身体のズレを修正して身体地図を更新します。</p>
-                    </a>
-                    <a href="layer03.html" class="block bg-stone-800/50 border border-stone-700/60 p-6 rounded-2xl hover:bg-stone-800 hover:border-[#c5a880]/50 transition-all duration-300 group">
-                        <span class="text-[10px] font-bold text-[#c5a880] uppercase tracking-wider block mb-1">LAYER 03</span>
-                        <h3 class="text-base font-serif font-bold text-white mb-2 group-hover:text-[#c5a880] transition-colors">整う条件を設計する</h3>
-                        <p class="text-xs text-stone-400 font-light leading-relaxed">姿勢、支持面、重心、呼吸など、身体に無理をさせずに自然に動きがまとまる条件を導きます。</p>
-                    </a>
-                    <a href="layer04.html" class="block bg-stone-800/50 border border-stone-700/60 p-6 rounded-2xl hover:bg-stone-800 hover:border-[#c5a880]/50 transition-all duration-300 group">
-                        <span class="text-[10px] font-bold text-[#c5a880] uppercase tracking-wider block mb-1">LAYER 04</span>
-                        <h3 class="text-base font-serif font-bold text-white mb-2 group-hover:text-[#c5a880] transition-colors">頑張らない身体づくり</h3>
-                        <p class="text-xs text-stone-400 font-light leading-relaxed">整った身体を日常の動きへ。余計な力を抜きながら、しっかりと力が出る体芯力を育てます。</p>
-                    </a>
-                    <a href="layer05
+  /* ---------- three-layer goal ---------- */
+  .layers{display:flex;flex-direction:column;gap:14px;margin:28px 0 8px;}
+  .layer{
+    border:1px solid var(--line);border-radius:12px;
+    padding:20px 24px;background:#fff;
+    background:rgba(255,255,255,.45);
+  }
+  .layer .role{
+    font-family:var(--display);font-weight:600;font-size:13px;
+    letter-spacing:.16em;color:var(--moss);margin-bottom:6px;display:block;
+  }
+  .layer .what{font-weight:700;font-size:16px;color:var(--ink);margin-bottom:4px;}
+  .layer .why{font-size:14px;color:var(--ink-soft);line-height:1.8;}
+  .layer.main{border-left:4px solid var(--moss);}
+
+  /* ---------- pillar themes ---------- */
+  .pillar{margin:0 0 26px;}
+  .pillar .ph{
+    font-weight:700;font-size:16px;color:var(--moss-deep);
+    margin-bottom:6px;display:flex;align-items:center;gap:10px;
+  }
+  .pillar .ph .pn{
+    font-family:var(--display);color:var(--sage);font-size:20px;line-height:1;
+  }
+  .pillar .pd{font-size:14.5px;color:var(--ink-soft);margin-bottom:8px;line-height:1.8;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-size:12.5px;color:var(--moss-deep);
+    background:var(--mist);border:1px solid var(--line);
+    border-radius:999px;padding:4px 13px;letter-spacing:.02em;
+  }
+
+  /* ---------- table ---------- */
+  .tbl{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px;}
+  .tbl th,.tbl td{
+    text-align:left;padding:14px 14px;border-bottom:1px solid var(--line);
+    vertical-align:top;line-height:1.7;
+  }
+  .tbl thead th{
+    font-family:var(--display);font-weight:600;color:var(--moss);
+    font-size:13.5px;letter-spacing:.06em;border-bottom:1.5px solid var(--sage);
+  }
+  .tbl td:first-child{font-weight:700;color:var(--ink);white-space:nowrap;}
+
+  /* ---------- weekly rhythm ---------- */
+  .rhythm{display:flex;flex-direction:column;gap:12px;margin:26px 0;}
+  .rrow{
+    display:flex;gap:18px;align-items:flex-start;
+    border:1px solid var(--line);border-radius:12px;
+    padding:16px 20px;background:rgba(255,255,255,.45);
+  }
+  .rrow .cnt{
+    font-family:var(--display);font-weight:600;color:var(--moss);
+    font-size:15px;flex:0 0 88px;letter-spacing:.04em;line-height:1.5;
+  }
+  .rrow .desc{font-size:14.5px;color:var(--ink);line-height:1.8;}
+  .rrow .desc small{display:block;color:var(--ink-soft);font-size:12.5px;margin-top:3px;}
+
+  /* ---------- steps ---------- */
+  .steps{counter-reset:s;margin:24px 0;padding:0;list-style:none;}
+  .steps li{
+    counter-increment:s;position:relative;padding:0 0 22px 52px;
+    line-height:1.8;
+  }
+  .steps li::before{
+    content:counter(s);
+    position:absolute;left:0;top:-2px;
+    width:34px;height:34px;border-radius:50%;
+    border:1.5px solid var(--moss);color:var(--moss);
+    font-family:var(--display);font-size:16px;font-weight:600;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .steps li::after{
+    content:"";position:absolute;left:16.5px;top:34px;bottom:6px;
+    width:1px;background:var(--line);
+  }
+  .steps li:last-child::after{display:none;}
+  .steps li b{font-weight:700;color:var(--moss-deep);}
+  .steps li .mt{font-size:12.5px;color:var(--sage);letter-spacing:.04em;}
+
+  /* ---------- diagrams ---------- */
+  figure{margin:34px 0;}
+  .diagram{
+    background:rgba(255,255,255,.5);
+    border:1px solid var(--line);border-radius:16px;
+    padding:30px 22px;
+  }
+  .diagram svg{width:100%;height:auto;display:block;}
+  .diagram text{font-family:var(--body);}
+  figcaption{
+    text-align:center;font-size:12.5px;color:var(--ink-soft);
+    margin-top:14px;letter-spacing:.04em;
+  }
+  .d-pill-fill{fill:var(--mist);}
+  .d-pill-stroke{stroke:var(--line);}
+  .d-text{fill:var(--ink);font-family:var(--body);font-weight:500;}
+  .d-text-sm{fill:var(--ink-soft);font-family:var(--body);}
+  .d-accent{fill:var(--moss);}
+  .d-arrow{stroke:var(--sage);fill:none;}
+  .d-arrowhead{fill:var(--sage);}
+
+  /* ---------- closing ---------- */
+  .closing{
+    margin-top:96px;padding:56px 0 0;border-top:1px solid var(--line);
+    text-align:center;
+  }
+  .closing .big{
+    font-family:var(--display);font-weight:600;
+    font-size:clamp(24px,5vw,34px);letter-spacing:.06em;
+    color:var(--moss-deep);line-height:1.6;margin:0 0 22px;
+  }
+  .closing p{color:var(--ink-soft);max-width:30em;margin:0 auto 14px;}
+  .seal{
+    margin-top:38px;font-size:11.5px;letter-spacing:.34em;
+    color:var(--sage);
+  }
+
+  @keyframes rise{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:none;}}
+  @media (prefers-reduced-motion:reduce){
+    .hero{animation:none;}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 20px 100px;}
+    .rrow{flex-direction:column;gap:6px;}
+    .rrow .cnt{flex-basis:auto;}
+    .hero .meta{flex-direction:column;gap:8px;}
+  }
+</style>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="kicker">NOTE 戦略書</p>
+    <h1>心に余裕、<br>つくりません<span class="q">か？</span></h1>
+    <p class="sub">精神科作業療法士が届ける、心とくらしの小さな実践。<br>共感で終わらせず、今日できる一歩まで。</p>
+    <div class="meta">
+      <span><b>発信主</b>　翔雲（精神科作業療法士｜将来：行政書士）</span>
+      <span><b>目的</b>　信頼の蓄積 ＋ ウェルビーイング</span>
+      <span><b>設計</b>　2026 種まき → 2027 開業同期</span>
+    </div>
+  </header>
+
+  <!-- 01 目的 -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">01</span><h2 class="etitle">目的 ── 何のための発信か</h2></div>
+    <p class="lead">noteは「売るため」の場ではなく、<strong>信頼を積み上げるため</strong>の場として設計します。目的を三層で整理すると、迷ったときの判断軸ができます。</p>
+
+    <div class="layers">
+      <div class="layer main">
+        <span class="role">MAIN ── 土台の目的</span>
+        <div class="what">将来事業への、信頼・権威・見込み客の蓄積</div>
+        <div class="why">行政書士開業、そして地域創生へ。「この人なら任せられる」と思われる土台を、発信で先に育てておく。</div>
+      </div>
+      <div class="layer">
+        <span class="role">MISSION ── 届ける理由</span>
+        <div class="what">当事者と家族のウェルビーイングを上げる</div>
+        <div class="why">作業療法の知見を、読んで実践できる形で渡す。読者の暮らしが少し軽くなることが、発信の存在理由。</div>
+      </div>
+      <div class="layer">
+        <span class="role">SUB ── 結果としての収入</span>
+        <div class="what">価値が生まれた分を、収入に変える</div>
+        <div class="why">複数の収入は、あなた自身の心の余裕にもなる。収益は目的ではなく、信頼が積もった先の自然な果実。</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <span class="tag">判断の軸</span>
+      <p style="margin:0"><strong>信頼資産 ＞ 直接収益。</strong>　迷ったら「より信頼が積み上がるほう」を選ぶ。だから無料記事は出し惜しみしない。短期の売上を取りにいって信頼を削るのは、この戦略では逆効果です。</p>
+    </div>
+    <hr class="divider">
+  </section>
+
+  <!-- 02 読者 -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">02</span><h2 class="etitle">読者 ── 心に余裕のない人</h2></div>
+    <p class="lead">コンセプトは「<strong>心に余裕のない人に、余裕を届ける</strong>」。この器の中に、当事者も家族もいます。書くときは、一人の具体的な顔を思い浮かべます。</p>
+
+    <h3>主役のペルソナ</h3>
+    <p>発達・知的の特性をベースにもつ統合失調症の息子を案じる、母。心配で目が離せず、つい過干渉になる。言い合いになっては、あとで自己嫌悪に沈む。家事と世話に追われ、自分の時間はない。疲れと余裕のなさから感情が高ぶり（高EE）、関係はさらにこじれていく ── そんな<strong>負のループ</strong>のなかにいる人です。</p>
+
+    <figure>
+      <div class="diagram">
+        <svg viewBox="0 0 600 660" role="img" aria-label="負のループの図">
+          <!-- pills -->
+          <g font-size="15">
+            <!-- 1 -->
+            <rect x="150" y="20"  width="300" height="56" rx="14" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+            <text x="300" y="54" text-anchor="middle" class="d-text">心配で目が離せない（過干渉）</text>
+            <!-- 2 -->
+            <rect x="150" y="118" width="300" height="56" rx="14" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+            <text x="300" y="152" text-anchor="middle" class="d-text">言い合い・衝突</text>
+            <!-- 3 -->
+            <rect x="150" y="216" width="300" height="56" rx="14" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+            <text x="300" y="250" text-anchor="middle" class="d-text">あとで自己嫌悪</text>
+            <!-- 4 -->
+            <rect x="150" y="314" width="300" height="56" rx="14" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+            <text x="300" y="348" text-anchor="middle" class="d-text">疲れ・自分の時間がない</text>
+            <!-- 5 -->
+            <rect x="150" y="412" width="300" height="56" rx="14" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+            <text x="300" y="446" text-anchor="middle" class="d-text">余裕の喪失（高EE）</text>
+            <!-- 6 -->
+            <rect x="150" y="510" width="300" height="56" rx="14" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+            <text x="300" y="544" text-anchor="middle" class="d-text">関係の悪化</text>
+          </g>
+          <!-- down arrows -->
+          <g class="d-arrow" stroke-width="1.6">
+            <path d="M300 76 L300 112"/>
+            <path d="M300 174 L300 210"/>
+            <path d="M300 272 L300 308"/>
+            <path d="M300 370 L300 406"/>
+            <path d="M300 468 L300 504"/>
+          </g>
+          <g class="d-arrowhead">
+            <path d="M300 116 l-5 -9 l10 0 z"/>
+            <path d="M300 214 l-5 -9 l10 0 z"/>
+            <path d="M300 312 l-5 -9 l10 0 z"/>
+            <path d="M300 410 l-5 -9 l10 0 z"/>
+            <path d="M300 508 l-5 -9 l10 0 z"/>
+          </g>
+          <!-- loop-back arrow (right side) -->
+          <path d="M450 538 C 560 538, 560 48, 450 48" class="d-arrow" stroke-width="1.6" stroke-dasharray="5 6"/>
+          <path d="M450 48 l11 -5 l0 10 z" class="d-arrowhead"/>
+          <text x="556" y="296" text-anchor="middle" class="d-text-sm" font-size="13" transform="rotate(90 556 296)">また最初へ、くり返す</text>
+        </svg>
+      </div>
+      <figcaption>図1：余裕の喪失が関係を悪化させ、悪化がさらに余裕を奪う循環</figcaption>
+    </figure>
+
+    <div class="callout warm">
+      <span class="tag">戦略の急所</span>
+      <p style="margin:0">この輪は、<strong>どこか一点に小さな余裕を差し込む</strong>と、回り方が変わります。あなたの発信の役割は、その“一点”をつくること。だからこそ、いきなり正論や対応技術ではなく、まず<strong>セルフケア（余裕の回復）</strong>から入るのが効きます。</p>
+    </div>
+
+    <h3>本人は、主役の隣に</h3>
+    <p>一番うれしいのは当事者本人に届くこと。その願いはこう叶えます ──「<strong>親が実践した先で、本人が楽になる</strong>」。主役は消耗した家族に置きつつ、本人が直接読んで試せる実践（柱③）も用意して、両方に届く設計にします。</p>
+    <hr class="divider">
+  </section>
+
+  <!-- 03 ポジショニング -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">03</span><h2 class="etitle">ポジショニング ── あなたの堀</h2></div>
+    <p class="lead">心の発信は飽和しています。けれど、あなたには他の人が真似できない“堀”が三つあります。</p>
+    <ul>
+      <li><b>堀①｜地続きの射程：</b>精神 × 身体 × お金 × 法律を、一人で地続きに語れる。心だけで終わらず、暮らしと制度まで届く。</li>
+      <li><b>堀②｜行動まで連れていく：</b>共感で止めない。必ず「今日できる一歩」か「選べる選択肢」まで渡す。寄り添い系との決定的な違い。</li>
+      <li><b>堀③｜希少な掛け算：</b>OT（今）× 行政書士（将来）。この組み合わせは全国でもほとんどいない、あなただけの肩書き。</li>
+    </ul>
+    <div class="callout">
+      <span class="tag">一言でいうと</span>
+      <p style="margin:0">「<strong>気持ちに寄り添い、行動まで連れていく人</strong>」。声色は、肯定して、急かさず背中を押す。お節介を恐れない、でも命令はしない ── ここが署名（サイン）になります。</p>
+    </div>
+    <hr class="divider">
+  </section>
+
+  <!-- 04 4本の柱 -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">04</span><h2 class="etitle">コンテンツの4本柱</h2></div>
+    <p class="lead">何を書くか。土台は<strong>セルフケア</strong>です。余裕がなければ、その上に何を積んでも崩れる。だから順番が大事です。</p>
+
+    <figure>
+      <div class="diagram">
+        <svg viewBox="0 0 600 380" role="img" aria-label="4本柱の積み上げ図">
+          <g font-size="15">
+            <!-- ④ top -->
+            <rect x="170" y="20"  width="260" height="60" rx="12" fill="#EFF1EA" class="d-pill-stroke" stroke-width="1"/>
+            <text x="300" y="46" text-anchor="middle" class="d-text">④ 暮らし・お金・制度</text>
+            <text x="300" y="66" text-anchor="middle" class="d-text-sm" font-size="12">行政書士業務への橋渡し</text>
+            <!-- ③ -->
+            <rect x="135" y="96" width="330" height="60" rx="12" fill="#E9ECE2" class="d-pill-stroke" stroke-width="1"/>
+            <text x="300" y="122" text-anchor="middle" class="d-text">③ 本人の生活リハビリ</text>
+            <text x="300" y="142" text-anchor="middle" class="d-text-sm" font-size="12">「1秒のリハビリ」系のすぐ試せる実践</text>
+            <!-- ② core -->
+            <rect x="100" y="172" width="400" height="64" rx="12" fill="#D7E0CC" stroke="#A9B89C" stroke-width="1.5"/>
+            <text x="300" y="198" text-anchor="middle" class="d-text" font-weight="700">② 家族コミュニケーション　＜核＞</text>
+            <text x="300" y="220" text-anchor="middle" class="d-text-sm" font-size="12">高EEを下げる声かけ・距離（家族心理教育）</text>
+            <!-- ① foundation -->
+            <rect x="60" y="252" width="480" height="74" rx="12" fill="#5C7355" stroke="#46583F" stroke-width="1.5"/>
+            <text x="300" y="282" text-anchor="middle" fill="#F1F2EC" font-family="var(--body)" font-weight="700" font-size="16">① セルフケア　＜土台・入口＞</text>
+            <text x="300" y="305" text-anchor="middle" fill="#D8E0D0" font-family="var(--body)" font-size="12">まず、心と身体の余裕を取り戻すところから</text>
+          </g>
+          <text x="300" y="356" text-anchor="middle" class="d-text-sm" font-size="12.5">↑ 下の土台があってはじめて、上が積める</text>
+        </svg>
+      </div>
+      <figcaption>図2：土台＝セルフケア。核＝家族コミュニケーション。</figcaption>
+    </figure>
+
+    <div class="pillar">
+      <div class="ph"><span class="pn">①</span>セルフケア｜土台・入口</div>
+      <div class="pd">余裕がなければ何も始まらない。詰め込まず、軽く・すぐ試せるものを。読者が最初に出会う入口にします。</div>
+      <div class="chips"><span class="chip">1分の呼吸法</span><span class="chip">睡眠の整え方</span><span class="chip">やらないことを決める</span><span class="chip">休む罪悪感のほどき方</span></div>
+    </div>
+    <div class="pillar">
+      <div class="ph"><span class="pn">②</span>家族コミュニケーション｜核</div>
+      <div class="pd">高EEを下げる声かけと距離の取り方。あなたの最も希少な武器（家族心理教育）が、読者の最も深い痛みにど真ん中で効く領域。</div>
+      <div class="chips"><span class="chip">言い合いにならない最初の一言</span><span class="chip">「手を放す」段階プラン</span><span class="chip">責めずに伝える型</span></div>
+    </div>
+    <div class="pillar">
+      <div class="ph"><span class="pn">③</span>本人の生活リハビリ</div>
+      <div class="pd">当事者本人がそのまま試せる、小さな実践。反応のよかった「1秒のリハビリ」を看板シリーズに育てます。</div>
+      <div class="chips"><span class="chip">朝の1アクション</span><span class="chip">不安が来たときの30秒</span><span class="chip">小さな成功体験の作り方</span></div>
+    </div>
+    <div class="pillar">
+      <div class="ph"><span class="pn">④</span>暮らし・お金・制度</div>
+      <div class="pd">使える支援制度や手続き。読者の不安を実務で減らしつつ、将来の行政書士業務へ自然に橋を架けます。月数本でゆるやかに。</div>
+      <div class="chips"><span class="chip">使える福祉サービス</span><span class="chip">お金の不安を減らす制度</span><span class="chip">相談先マップ</span></div>
+    </div>
+
+    <div class="callout">
+      <span class="tag">配分の目安</span>
+      <p style="margin:0">①②を主軸に毎週。③を定期的に。④は月に数本でゆっくり育てる。<strong>形式そのものをメッセージに</strong>──余裕のない人に詰め込まないため、1本は軽く短くが原則です。</p>
+    </div>
+    <hr class="divider">
+  </section>
+
+  <!-- 05 投稿リズム -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">05</span><h2 class="etitle">投稿リズム ── 続く設計</h2></div>
+    <p class="lead">あなたの最大の敵は、質の低さではなく<strong>“止まり”</strong>です。平日1時間・休日2時間に収まり、完璧主義でも回るリズムにします。</p>
+
+    <div class="rhythm">
+      <div class="rrow"><div class="cnt">週 2〜3本</div><div class="desc">短い実践記事<small>セルフケア／本人実践が中心。1本15〜20分で書き切る。</small></div></div>
+      <div class="rrow"><div class="cnt">月 1本</div><div class="desc">少し深い記事<small>柱②（家族）か④（制度）。読みごたえのある定点。</small></div></div>
+      <div class="rrow"><div class="cnt">週 1回</div><div class="desc">完全版を一段落だけ更新<small>完成を待たず、少しずつ“育てる”。</small></div></div>
+    </div>
+
+    <div class="callout warm">
+      <span class="tag">完璧主義への処方箋</span>
+      <p style="margin:0"><strong>60%で出す。</strong>　完成を待たない。あなたの理想は高いほど価値があるけれど、出さなければ誰にも届きません。「まだ完璧じゃない」と思った瞬間が、公開のサインです。</p>
+    </div>
+    <hr class="divider">
+  </section>
+
+  <!-- 06 収益化 -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">06</span><h2 class="etitle">収益化の設計</h2></div>
+    <p class="lead">収入は「信頼が積もった先の果実」。形を理解したうえで、無理なく仕込みます。</p>
+
+    <table class="tbl">
+      <thead><tr><th>形</th><th>特徴</th><th>向いていること</th></tr></thead>
+      <tbody>
+        <tr><td>単発有料記事</td><td>1本ずつ売り切り。一度書けば売れ続けるストック資産。</td><td>保存版・網羅ガイド</td></tr>
+        <tr><td>有料マガジン</td><td>複数記事をテーマ別に束ねて販売。まとめ売りでお得感。</td><td>シリーズのパッケージ化</td></tr>
+        <tr><td>メンバーシップ</td><td>月額サブスク。読み放題＋つながり。継続収入＝安定。</td><td>記事が貯まった後の本命</td></tr>
+      </tbody>
+    </table>
+
+    <h3>旗艦：「家族心理教育ノート」 v0.1</h3>
+    <p>最初の有料記事は、あなたの最希少の専門性を一本に。ただし「完全版」という名前は完璧主義の地雷です。だから<strong>“育つ一本”として6割で出す</strong>。買った人は更新ぶんもずっと読める ──「<span class="hl">買うほど得をする</span>」が価格の根拠になり、完璧主義のあなたが唯一ちゃんと出せる形になります。</p>
+
+    <h3>無料と有料の線引き</h3>
+    <ul>
+      <li><b>無料：</b>単発の気づき・すぐ試せる実践（信頼と認知を稼ぐ。気前よく）。</li>
+      <li><b>有料：</b>体系化・保存版・伴走的なもの（深さと網羅で価値を出す）。</li>
+    </ul>
+
+    <figure>
+      <div class="diagram">
+        <svg viewBox="0 0 600 420" role="img" aria-label="1つの発信から複数の出口への図">
+          <!-- source -->
+          <rect x="20" y="160" width="180" height="100" rx="14" fill="#5C7355" stroke="#46583F" stroke-width="1.5"/>
+          <text x="110" y="200" text-anchor="middle" fill="#F1F2EC" font-family="var(--body)" font-weight="700" font-size="15">発信（無料）</text>
+          <text x="110" y="224" text-anchor="middle" fill="#D8E0D0" font-family="var(--body)" font-size="12">心に余裕、</text>
+          <text x="110" y="242" text-anchor="middle" fill="#D8E0D0" font-family="var(--body)" font-size="12">つくりませんか？</text>
+
+          <!-- branches -->
+          <g class="d-arrow" stroke-width="1.6">
+            <path d="M200 200 C 290 200, 300 70, 380 70"/>
+            <path d="M200 210 C 300 210, 300 210, 380 210"/>
+            <path d="M200 220 C 290 220, 300 350, 380 350"/>
+          </g>
+          <g class="d-arrowhead">
+            <path d="M380 70 l-10 -5 l0 10 z"/>
+            <path d="M380 210 l-10 -5 l0 10 z"/>
+            <path d="M380 350 l-10 -5 l0 10 z"/>
+          </g>
+
+          <!-- exits -->
+          <rect x="386" y="40" width="200" height="64" rx="12" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+          <text x="486" y="68" text-anchor="middle" class="d-text" font-size="14">一般読者</text>
+          <text x="486" y="88" text-anchor="middle" class="d-text-sm" font-size="11.5">→ 有料記事・メンバーシップ</text>
+
+          <rect x="386" y="180" width="200" height="64" rx="12" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+          <text x="486" y="208" text-anchor="middle" class="d-text" font-size="14">専門職（OT・他士業）</text>
+          <text x="486" y="228" text-anchor="middle" class="d-text-sm" font-size="11.5">→ 研修・講演</text>
+
+          <rect x="386" y="320" width="200" height="64" rx="12" class="d-pill-fill d-pill-stroke" stroke-width="1"/>
+          <text x="486" y="348" text-anchor="middle" class="d-text" font-size="14">家族・事業者</text>
+          <text x="486" y="368" text-anchor="middle" class="d-text-sm" font-size="11.5">→ 行政書士業務</text>
+        </svg>
+      </div>
+      <figcaption>図3：書く相手は一つ。お金を払う相手は分けて、別の出口で換金する。</figcaption>
+    </figure>
+
+    <div class="callout">
+      <span class="tag">時間軸の注意</span>
+      <p style="margin:0">メンバーシップの本格ローンチは、記事が貯まり時間も空く<strong>2027年・開業と同期</strong>させるのが安全。2026年は「無料で読者と資産を増やしつつ、有料記事を数本仕込む」<strong>種まきの年</strong>と位置づけます。</p>
+    </div>
+    <hr class="divider">
+  </section>
+
+  <!-- 07 発見性 -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">07</span><h2 class="etitle">発見性 ── 届く工夫</h2></div>
+    <p class="lead">良い記事も、見つけられなければ届きません。ハッシュタグで露出が変わるのは、あなた自身が実証済みです。再現できる型にします。</p>
+    <ul>
+      <li><b>タグは大＋中を混ぜる：</b>大（#メンタルヘルス #子育て #統合失調症 など）で広く、中（#家族支援 #セルフケア など）で深く。毎回必ず付け直す。</li>
+      <li><b>タイトルの型：</b>「相手の状況 ＋ 小さな解決」。例『言い合いに疲れた夜に、試す一言』。</li>
+      <li><b>冒頭3行で「これは私のことだ」：</b>ペルソナの状況を最初に置き、読者に自分を見つけてもらう。</li>
+      <li><b>伸びた理由を再現：</b>自己紹介＝“人”への興味、1秒のリハビリ＝“すぐ試せる”。この<b>人柄 × 即実践</b>を、毎記事に少しずつ織り込む。</li>
+    </ul>
+    <hr class="divider">
+  </section>
+
+  <!-- 08 ロードマップ -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">08</span><h2 class="etitle">ロードマップ</h2></div>
+    <p class="lead">試験・移住・開業という大きな予定に、発信を無理なく重ねます。</p>
+
+    <figure>
+      <div class="diagram">
+        <svg viewBox="0 0 600 300" role="img" aria-label="2026年から2027年のロードマップ">
+          <!-- baseline -->
+          <line x1="40" y1="150" x2="560" y2="150" stroke="#9FAE96" stroke-width="2"/>
+          <!-- milestones -->
+          <g font-family="var(--body)">
+            <!-- m1 -->
+            <circle cx="80" cy="150" r="7" fill="#5C7355"/>
+            <text x="80" y="120" text-anchor="middle" class="d-text" font-size="13" font-weight="700">今〜2026夏</text>
+            <text x="80" y="186" text-anchor="middle" class="d-text-sm" font-size="11.5">種まき</text>
+            <text x="80" y="202" text-anchor="middle" class="d-text-sm" font-size="11.5">読者と信頼</text>
+            <text x="80" y="218" text-anchor="middle" class="d-text-sm" font-size="11.5">完全版v0.1着手</text>
+            <!-- m2 -->
+            <circle cx="230" cy="150" r="7" fill="#5C7355"/>
+            <text x="230" y="120" text-anchor="middle" class="d-text" font-size="13" font-weight="700">2026.8</text>
+            <text x="230" y="186" text-anchor="middle" class="d-text-sm" font-size="11.5">函館・道南へ</text>
+            <text x="230" y="202" text-anchor="middle" class="d-text-sm" font-size="11.5">移住</text>
+            <!-- m3 -->
+            <circle cx="380" cy="150" r="7" fill="#BE9442"/>
+            <text x="380" y="120" text-anchor="middle" class="d-text" font-size="13" font-weight="700">2026.11</text>
+            <text x="380" y="186" text-anchor="middle" class="d-text-sm" font-size="11.5">行政書士試験</text>
+            <text x="380" y="202" text-anchor="middle" class="d-accent" font-size="11.5" font-weight="700">最優先</text>
+            <text x="380" y="220" text-anchor="middle" class="d-text-sm" font-size="11">noteは最小運用で“止めない”</text>
+            <!-- m4 -->
+            <circle cx="530" cy="150" r="7" fill="#5C7355"/>
+            <text x="530" y="120" text-anchor="middle" class="d-text" font-size="13" font-weight="700">2027 春</text>
+            <text x="530" y="186" text-anchor="middle" class="d-text-sm" font-size="11.5">開業</text>
+            <text x="530" y="202" text-anchor="middle" class="d-text-sm" font-size="11.5">メンバーシップ</text>
+            <text x="530" y="218" text-anchor="middle" class="d-text-sm" font-size="11.5">本格化・同期</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption>図4：2026年は積む年、2027年で発信と事業を一体にして収穫へ。</figcaption>
+    </figure>
+    <hr class="divider">
+  </section>
+
+  <!-- 09 最初の30日 -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">09</span><h2 class="etitle">最初の30日 ── 踏み出す一歩</h2></div>
+    <p class="lead">完璧主義で止まらないために、最初の一歩はできるだけ小さく刻みます。考える前に、まず動く。</p>
+    <ol class="steps">
+      <li><b>プロフィールを看板コピーに差し替える。</b><br><span class="mt">所要30分。「心に余裕、つくりませんか？」＋サブを置くだけ。</span></li>
+      <li><b>既存50記事から、セルフケア／即実践系を5本選び、タグを付け直す。</b><br><span class="mt">露出が一番すぐ変わる、効果の早い一手。</span></li>
+      <li><b>看板コピーを冠した“はじめの一本”を、60%で出す。</b><br><span class="mt">完璧を狙わない。走り出すことが目的。</span></li>
+      <li><b>週2本の短い実践を、曜日固定で投稿する。</b><br><span class="mt">「いつ書くか」を先に決めておくと、止まりにくい。</span></li>
+      <li><b>完全版v0.1の“目次だけ”をつくる。</b><br><span class="mt">中身はあとで育てる。器を先に置くと、書きやすくなる。</span></li>
+    </ol>
+    <hr class="divider">
+  </section>
+
+  <!-- 10 振り返り -->
+  <section class="section">
+    <div class="eyebrow"><span class="num">10</span><h2 class="etitle">振り返りの指標</h2></div>
+    <p class="lead">フォロワー数は“結果”であって、目的ではありません。目的は信頼。だから<strong>信頼の質</strong>を見ます。</p>
+    <ul>
+      <li><b>保存数：</b>「あとで実践したい」と思われた証。</li>
+      <li><b>コメントの深さ：</b>「私のことだ」と心が動いた量。</li>
+      <li><b>有料記事の感想：</b>お金を払ってでも欲しかった価値。</li>
+      <li><b>当事者・家族からの声：</b>一番うれしい、ミッションの達成度。</li>
+    </ul>
+    <p>あなたは成長そのものを喜べる人です。毎月ひとつ、「<strong>先月の自分より進んだ一歩</strong>」を記録しておきましょう。数字より、その積み重ねが燃料になります。</p>
+  </section>
+
+  <!-- closing -->
+  <footer class="closing">
+    <p class="big">人生は、行動だ。</p>
+    <p>完璧な戦略より、今日出す一本。</p>
+    <p>この戦略書も、60%で走り出すための地図です。</p>
+    <p class="seal">心に余裕、つくりませんか？</p>
+  </footer>
+
+</div>
+
